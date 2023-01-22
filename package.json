@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
-    "start": "solid-start start"
+    "start": "solid-start start",
+    "gen": "graphql-codegen --config codegen.yml"
   },
   "type": "module",
   "devDependencies": {
@@ -15,14 +16,22 @@
     "vite": "^3.1.8"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^2.16.4",
+    "@graphql-codegen/typescript": "^2.8.7",
+    "@graphql-codegen/typescript-urql": "^3.7.3",
+    "@graphql-codegen/urql-introspection": "^2.2.1",
     "@hope-ui/solid": "^0.6.7",
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.6.0",
     "@stitches/core": "^1.2.8",
+    "@urql/core": "^3.1.1",
+    "graphql": "^16.6.0",
     "solid-forms": "^0.4.8",
     "solid-js": "^1.6.2",
     "solid-start": "^0.2.0",
     "solid-transition-group": "^0.0.12",
+    "solid-urql": "^0.2.0",
+    "ts-node": "^10.9.1",
     "undici": "^5.11.0"
   },
   "engines": {
